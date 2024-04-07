@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "mocha": "^10.3.0",
+    "pactum": "^3.6.3"
+  },
+  "scripts": {
+    "test": "mocha test/functional/users/**.test.js",
+    "testUnique": "mocha test/functional/users/deveValidarOCadastroDeUmUsuarioDoTipoClienteComEmailCadastrado.test.js"
+  },
+  "dependencies": {
+    "chai": "^5.1.0"
+  }
+}
