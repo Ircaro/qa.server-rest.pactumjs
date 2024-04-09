@@ -46,7 +46,7 @@ export const TC04 = {
         firstName: "tc04"
     }),
     email: faker.internet.email({
-        firstName: "tc044"
+        firstName: "tc04"
     }),
     password: faker.internet.password({
         length: 6
@@ -57,10 +57,10 @@ export const TC04 = {
 
 export const TC05 = {
     nome: faker.person.fullName({
-        firstName: "tc01"
+        firstName: "tc05"
     }),
     email: faker.internet.email({
-        firstName: "tc01"
+        firstName: "tc05"
     }),
     password: faker.internet.password({
         length: 6
@@ -70,13 +70,13 @@ export const TC05 = {
 
 export const TC06 = {
     nome: faker.person.fullName({
-        firstName: "tc01"
+        firstName: "tc06"
     }),
     email: faker.internet.email({
-        firstName: "tc01"
+        firstName: "tc06"
     }),
     password: faker.internet.password({
         length: 6
     }),
-    administrador: "false"
+    administrador: "true"
 }
