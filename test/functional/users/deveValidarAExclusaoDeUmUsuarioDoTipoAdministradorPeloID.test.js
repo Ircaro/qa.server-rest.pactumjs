@@ -10,6 +10,6 @@ describe("POST - Usuários", () => {
     })
     it('[TC-06] - Deve validar a exclusão de um usuário do tipo administrador através do ID.', async () => {
         deletarUsuario = await deleteUsuarios(cadastrarUsuario.json._id)
-        assert.equal(deletarUsuario.json.message, "Registro excluído com sucesso", "A mensagem é diferente do esperado.")
+        assert.equal(deletarUsuario.json.message, TC06.responseMessage200, "A mensagem é diferente do esperado.")
     })
 })

@@ -65,7 +65,8 @@ export const TC05 = {
     password: faker.internet.password({
         length: 6
     }),
-    administrador: "false"
+    administrador: "false",
+    responseMessage200: "Registro excluído com sucesso" 
 }
 
 export const TC06 = {
@@ -78,5 +79,8 @@ export const TC06 = {
     password: faker.internet.password({
         length: 6
     }),
-    administrador: "true"
+    administrador: "true",
+    responseMessage200: "Registro excluído com sucesso" 
 }
+
+export const TC07 = { invalidID: "123456", responseMessage200: "Nenhum registro excluído" }
