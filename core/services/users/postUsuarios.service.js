@@ -1,6 +1,6 @@
 import pactum from "pactum";
 
-async function postUsuarios(data, statusCodeResponse = 201) {
+export async function postUsuarios(data, statusCodeResponse = 201) {
     return await pactum.spec()
         .post('https://serverest.dev/usuarios')
         .withBody({
@@ -11,5 +11,3 @@ async function postUsuarios(data, statusCodeResponse = 201) {
         })
         .expectStatus(statusCodeResponse)
 }
-
-export { postUsuarios };

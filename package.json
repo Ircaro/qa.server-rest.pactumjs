@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "mocha test/functional/users/**.test.js",
-    "testUnique": "mocha test/functional/users/deveValidarOCadastroDeUmUsuarioDoTipoClienteComEmailCadastrado.test.js"
+    "testUnique": "mocha test/functional/users/deveValidarOCadastroDeUmUsuarioDoTipoCliente2.test.js --timeout=999999"
   },
   "dependencies": {
     "chai": "^5.1.0"

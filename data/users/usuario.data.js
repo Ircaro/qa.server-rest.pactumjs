@@ -1,11 +1,11 @@
 import { faker } from "@faker-js/faker"
 
-const TC01 = {
+export const TC01 = {
     nome: faker.person.fullName({
         firstName: "tc01"
     }),
     email: faker.internet.email({
-        firstName: "tc01a"
+        firstName: "tc01"
     }),
     password: faker.internet.password({
         length: 6
@@ -13,7 +13,7 @@ const TC01 = {
     administrador: "false"
 }
 
-const TC02 = {
+export const TC02 = {
     nome: faker.person.fullName({
         firstName: "tc02"
     }),
@@ -26,21 +26,22 @@ const TC02 = {
     administrador: "true"
 }
 
-const TC03 = {
+export const TC03 = {
     nome: faker.person.fullName({
         firstName: "tc03"
     }),
     email: faker.internet.email({
-        firstName: "tc034",
+        firstName: "tc03",
         allowSpecialCharacters: true
     }),
     password: faker.internet.password({
         length: 6
     }),
-    administrador: "false"
+    administrador: "false",
+    responseMessage400: "Este email já está sendo usado"
 }
 
-const TC04 = {
+export const TC04 = {
     nome: faker.person.fullName({
         firstName: "tc04"
     }),
@@ -50,7 +51,32 @@ const TC04 = {
     password: faker.internet.password({
         length: 6
     }),
-    administrador: "true"
+    administrador: "true",
+    responseMessage400: "Este email já está sendo usado"
 }
 
-export { TC01, TC02, TC03, TC04 }
+export const TC05 = {
+    nome: faker.person.fullName({
+        firstName: "tc01"
+    }),
+    email: faker.internet.email({
+        firstName: "tc01"
+    }),
+    password: faker.internet.password({
+        length: 6
+    }),
+    administrador: "false"
+}
+
+export const TC06 = {
+    nome: faker.person.fullName({
+        firstName: "tc01"
+    }),
+    email: faker.internet.email({
+        firstName: "tc01"
+    }),
+    password: faker.internet.password({
+        length: 6
+    }),
+    administrador: "false"
+}
