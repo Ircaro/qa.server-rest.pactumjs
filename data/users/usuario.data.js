@@ -84,3 +84,16 @@ export const TC06 = {
 }
 
 export const TC07 = { invalidID: "123456", responseMessage200: "Nenhum registro excluído" }
+
+export const TC08 = {
+    nome: faker.person.fullName({
+        firstName: "tc08"
+    }),
+    email: faker.internet.email({
+        firstName: "tc08"
+    }),
+    password: faker.internet.password({
+        length: 6
+    }),
+    administrador: "false"
+}
