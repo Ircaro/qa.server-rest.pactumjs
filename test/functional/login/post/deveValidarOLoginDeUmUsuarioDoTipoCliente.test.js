@@ -11,9 +11,8 @@ describe('POST - Login', () => {
 
     it('[TC-11] - Deve validar o login de um usuário do tipo cliente.', async () => {
         let loginUsuario = await postLogin(TC11.email, TC11.password)
-        assert.equal(loginUsuario.json.message, TC11.responseMessage200, "A mensagem foi diferente do esperado.")
+        assert.equal(loginUsuario.json.message, TC11.responseMessage200, "A mensagem é diferente do esperado.")
         expect(loginUsuario.json).to.have.property('authorization')
         expect(loginUsuario.json.authorization).to.be.a("string")
-        // console.log(loginUsuario.json)
     })
 })

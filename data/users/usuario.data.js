@@ -111,3 +111,64 @@ export const TC11 = {
     administrador: "false",
     responseMessage200: "Login realizado com sucesso"
 }
+
+export const TC12 = {
+    nome: faker.person.fullName({
+        firstName: "tc12"
+    }),
+    email: faker.internet.email({
+        firstName: "tc12"
+    }),
+    password: faker.internet.password({
+        length: 6
+    }),
+    administrador: "true",
+    responseMessage200: "Login realizado com sucesso"
+}
+
+export const TC13 = {
+    nome: faker.person.fullName({
+        firstName: "tc13"
+    }),
+    email: faker.internet.email({
+        firstName: "tc13"
+    }),
+    password: faker.internet.password({
+        length: 6
+    }),
+    incorretPassword: faker.internet.password({
+        length: 6
+    }),
+    administrador: "false",
+    statusCode401: 401,
+    responseMessage401: "Email e/ou senha inválidos"
+}
+
+export const TC14 = {
+    nome: faker.person.fullName({
+        firstName: "tc14"
+    }),
+    email: faker.internet.email({
+        firstName: "tc14"
+    }),
+    password: faker.internet.password({
+        length: 6
+    }),
+    incorretPassword: faker.internet.password({
+        length: 6
+    }),
+    administrador: "true",
+    statusCode401: 401,
+    responseMessage401: "Email e/ou senha inválidos"
+}
+
+export const TC15 = {
+    email: faker.internet.email({
+        firstName: "tc15"
+    }),
+    password: faker.internet.password({
+        length: 6
+    }),
+    statusCode401: 401,
+    responseMessage401: "Email e/ou senha inválidos"
+}

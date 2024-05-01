@@ -8,7 +8,7 @@
   "scripts": {
     "test": "mocha test/functional/users/**.test.js",
     "testUnique": "mocha test/functional/users/get/deveValidarABuscaDeUmUsuarioAtravesDoNome.test.js --timeout=999999",
-    "testUnique2": "mocha test/functional/login/post/deveValidarOLoginDeUmUsuarioDoTipoCliente.test.js --timeout=999999"
+    "testLogin": "mocha test/functional/login/post/**.test.js --timeout=999999"
   },
   "dependencies": {
     "chai": "^5.1.0"
