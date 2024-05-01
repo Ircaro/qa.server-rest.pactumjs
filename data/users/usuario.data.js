@@ -97,3 +97,17 @@ export const TC08 = {
     }),
     administrador: "false"
 }
+
+export const TC11 = {
+    nome: faker.person.fullName({
+        firstName: "tc11"
+    }),
+    email: faker.internet.email({
+        firstName: "tc11"
+    }),
+    password: faker.internet.password({
+        length: 6
+    }),
+    administrador: "false",
+    responseMessage200: "Login realizado com sucesso"
+}
